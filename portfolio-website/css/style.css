@@ -1,0 +1,295 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #0f0f1a;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background-color: #101018;
+  padding: 20px 0;
+  border-bottom: 2px solid #00ffff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00ffff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00ffff;
+}
+
+/* Sections */
+.section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-left: 5px solid #00ffff;
+  padding-left: 10px;
+}
+
+/* Home */
+#home {
+  text-align: center;
+  padding-top: 100px;
+}
+
+#home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#home p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00ffff;
+}
+
+/* About */
+#about p {
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  list-style: none;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+}
+
+/* Projects */
+.project {
+  margin-bottom: 40px;
+  background-color: #1a1a2e;
+  border-left: 4px solid #00ffff;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.project-info h3 {
+  margin-bottom: 10px;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00ffff;
+  border: 1px solid #00ffff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #00ffff;
+  color: #0f0f1a;
+}
+
+/* Slider */
+.slider {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #00ffff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Contact */
+#contact .contact-card {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1a1a2e;
+  padding: 20px;
+  border-left: 4px solid #00ffff;
+  border-radius: 5px;
+}
+
+.contact-left {
+  flex: 1;
+  min-width: 200px;
+}
+
+.contact-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.contact-right {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.contact-right p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.contact-right i {
+  margin-right: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 10px;
+  background-color: #101018;
+  border-top: 2px solid #00ffff;
+  margin-top: 40px;
+  color: #aaa;
+}
+/* Footer */
+footer {
+  background-color: #101018;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 2px solid #00ffff;
+  font-size: 0.9rem;
+}
+/* Mini Projects Section */
+#mini-projects .mini-projects-wrapper {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
+}
+
+.mini-project {
+  min-width: 250px;
+  background-color: #1a1a2e;
+  border-left: 3px solid #00ffff;
+  border-radius: 5px;
+  padding: 15px;
+  flex-shrink: 0;
+  width: 40%; /* 40% smaller than main project */
+}
+
+.mini-project h4 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.mini-project p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Mini Slider */
+.mini-slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  height: auto;
+}
+
+.mini-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.mini-slides img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
